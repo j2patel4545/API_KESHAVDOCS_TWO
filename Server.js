@@ -90,19 +90,19 @@ app.get("/", (req, res) => {
           <tbody class="text-gray-700">
             <tr class="hover:bg-blue-50 transition-colors">
               <td class="border px-4 py-2"><span class="method POST">POST</span></td>
-              <td class="border px-4 py-2"><code>/todos</code></td>
+              <td class="border px-4 py-2"><code>/api/todos</code></td>
               <td class="border px-4 py-2">title, description, status, priority, dueDate, tags</td>
               <td class="border px-4 py-2">Create a new Todo</td>
             </tr>
             <tr class="hover:bg-blue-50 transition-colors">
               <td class="border px-4 py-2"><span class="method GET">GET</span></td>
-              <td class="border px-4 py-2"><code>/todos</code></td>
+              <td class="border px-4 py-2"><code>/api/todos</code></td>
               <td class="border px-4 py-2">Optional query: status, tag</td>
               <td class="border px-4 py-2">Get all Todos</td>
             </tr>
             <tr class="hover:bg-blue-50 transition-colors">
               <td class="border px-4 py-2"><span class="method GET">GET</span></td>
-              <td class="border px-4 py-2"><code>/todos/:id</code></td>
+              <td class="border px-4 py-2"><code>/api/todos/:id</code></td>
               <td class="border px-4 py-2">id (path param)</td>
               <td class="border px-4 py-2">Get a single Todo</td>
             </tr>
@@ -114,7 +114,7 @@ app.get("/", (req, res) => {
             </tr>
             <tr class="hover:bg-blue-50 transition-colors">
               <td class="border px-4 py-2"><span class="method DELETE">DELETE</span></td>
-              <td class="border px-4 py-2"><code>/todos/:id</code></td>
+              <td class="border px-4 py-2"><code>/api/todos/:id</code></td>
               <td class="border px-4 py-2">id (path param)</td>
               <td class="border px-4 py-2">Soft delete a Todo</td>
             </tr>
@@ -139,31 +139,31 @@ app.get("/", (req, res) => {
           <tbody class="text-gray-700">
             <tr class="hover:bg-yellow-50 transition-colors">
               <td class="border px-4 py-2"><span class="method POST">POST</span></td>
-              <td class="border px-4 py-2"><code>/products</code></td>
+              <td class="border px-4 py-2"><code>/api/products</code></td>
               <td class="border px-4 py-2">name*, description, category, price*, discount, currency, stock, sku, images[]</td>
               <td class="border px-4 py-2">Create a new Product (supports multiple images)</td>
             </tr>
             <tr class="hover:bg-yellow-50 transition-colors">
               <td class="border px-4 py-2"><span class="method GET">GET</span></td>
-              <td class="border px-4 py-2"><code>/products</code></td>
+              <td class="border px-4 py-2"><code>/api/products</code></td>
               <td class="border px-4 py-2">None</td>
               <td class="border px-4 py-2">Get all Products</td>
             </tr>
             <tr class="hover:bg-yellow-50 transition-colors">
               <td class="border px-4 py-2"><span class="method GET">GET</span></td>
-              <td class="border px-4 py-2"><code>/products/:id</code></td>
+              <td class="border px-4 py-2"><code>/api/products/:id</code></td>
               <td class="border px-4 py-2">id (path param)</td>
               <td class="border px-4 py-2">Get single Product by ID</td>
             </tr>
             <tr class="hover:bg-yellow-50 transition-colors">
               <td class="border px-4 py-2"><span class="method PUT">PUT</span></td>
-              <td class="border px-4 py-2"><code>/products/:id</code></td>
+              <td class="border px-4 py-2"><code>/api/products/:id</code></td>
               <td class="border px-4 py-2">name, description, category, price, discount, currency, stock, sku, images[]</td>
               <td class="border px-4 py-2">Update Product (add new images supported)</td>
             </tr>
             <tr class="hover:bg-yellow-50 transition-colors">
               <td class="border px-4 py-2"><span class="method DELETE">DELETE</span></td>
-              <td class="border px-4 py-2"><code>/products/:id</code></td>
+              <td class="border px-4 py-2"><code>/api/products/:id</code></td>
               <td class="border px-4 py-2">id (path param)</td>
               <td class="border px-4 py-2">Soft delete Product</td>
             </tr>
